@@ -17,9 +17,9 @@ dev_dependencies:
   test: ^1.6.0
   path: ^1.6.0
 
-#dependency_overrides:
-#  moor:
-#    path: ../moor
+dependency_overrides:
+  moor:
+    path: ../moor
 
 flutter:
   plugin:
