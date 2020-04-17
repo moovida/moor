@@ -8,7 +8,13 @@ environment:
   sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
-  moor: ^3.0.0-dev
+  #moor: ^3.0.0-dev
+  # have it depend on the git repo, else it will break due to git transitivity
+  moor:
+    git:
+      url: https://github.com/moovida/moor.git
+      ref: develop
+      path: moor
   ffi: ^0.1.3
   collection: ^1.0.0
   meta: ^1.0.2
